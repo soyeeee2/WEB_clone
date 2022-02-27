@@ -1,0 +1,231 @@
+/* 노멀라이징 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  /* 라이브러리 */
+  .cell {
+    float: left;
+  }
+  .cell-r {
+    float: right;
+  }
+  .row::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .con-l {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .con-s {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .img-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* 스타일 */
+  .top-bar-wrap {
+    width: 100%;
+  }
+  .top-bar-wrap > .head-top-bar {
+    position: relative;
+  }
+  .top-bar-wrap > .head-top-bar > .language {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    line-height: 65px;
+  }
+  .top-bar-wrap > .head-top-bar > .main-logo {
+    width: 20%;
+    margin: 0 auto;
+  }
+  .top-bar-wrap > .head-top-bar > .main-logo > img {
+    width: 100%;
+  }
+  .top-bar-wrap > .head-top-bar > .src-wrap {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+  .top-bar-wrap > .head-top-bar > .src-wrap > .src-box {
+    width: 170px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 20px;
+  }
+  .top-bar-wrap > .head-top-bar > .src-wrap > .src-icon {
+    margin-left: 5px;
+    font-size: 25px;
+  }
+  .bottom-top-bar {
+    height: 35%;
+    text-align: center;
+  }
+  .bottom-top-bar > ul {
+    line-height: 35px;
+    display: inline-block;
+  }
+  .bottom-top-bar > ul > li {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1vw;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* 섹션 시작 */
+  .section-wrap {
+  }
+  .section-wrap > .sec-kg {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .section-wrap .sec-kg .img-box > img {
+    width: 100%;
+    display: block;
+  }
+  .sec-cal {
+    height: 600px;
+  }
+  .sec-cal > h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .sec-cal > .sec-l {
+    width: 33.3%;
+    height: 100%;
+    background-color: #ddd;
+  }
+  .sec-cal > .sec-l > .calendar > .days > .day {
+    width: calc(100% / 7);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .sec-cal > .sec-l > .calendar > .dates > .date {
+    width: calc(100% / 7);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+  }
+  .sec-cal > .sec-l > .calendar > .dates > .date:first-child {
+    color: gray;
+  }
+  .sec-cal > .sec-l > .calendar > .dates > .date:nth-child(29) ~ .date {
+    color: gray;
+  }
+  .sec-cal > .sec-l > .calendar > .dates > .date > .dot {
+    width: 10px;
+    height: 10px;
+    background-color: hotpink;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+  }
+  .sec-cal > .sec-l > .calendar > .dates > .date > .dot.active {
+    display: block;
+  }
+  .sec-cal > .sec-r1 {
+    width: 33.3%;
+    height: 100%;
+  }
+  .sec-cal > .sec-r1 .content {
+    padding-left: 20px;
+    padding-top: 45px;
+  }
+  .sec-cal > .sec-r1 .content > h1 {
+    padding-bottom: 20px;
+  }
+  .sec-cal > .sec-r1 .content > .con-detail > h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .sec-cal > .sec-r1 .content > .con-detail > h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .sec-cal > .sec-r1 .content > .con-detail > h4:first-child {
+    color: hotpink;
+  }
+  .sec-cal > .sec-r1 .content > .con-detail > h4:nth-of-type(2) {
+    color: lightgray;
+  }
+  .sec-cal > .sec-r1 .content > .con-detail > h4:nth-of-type(3) {
+    color: gray;
+  }
+  .sec-r1 .slick-dots {
+    bottom: 0px;
+    left: -50px;
+  }
+  .sec-cal > .sec-r2 {
+    width: 33.3%;
+    position: relative;
+  }
+  .sec-r2 .content-wrap .content > .img-box {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  .sec-r2 > .view-all {
+    width: 40%;
+    background-color: #ddd;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .sec-r2 > .view-all > p {
+    text-align: center;
+    line-height: 20px;
+  }
+  .sec-benefit > .content > h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .sec-benefit > .content > .promotion-box{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion{
+    width: 33.3%;
+    height: 50px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion01{
+    background-color: lightblue;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion02{
+    background-color: lightyellow;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion03{
+    background-color: lightpink;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion > p{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  /* 링크
+  https://codepen.io/young-yoi/pen/LYOrzOR?editors=1100*/
+  
