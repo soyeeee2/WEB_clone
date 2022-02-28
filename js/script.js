@@ -9,5 +9,7 @@ $(document).ready(function () {
     $(".sec-r2 > .content-wrap").slick({
       asNavFor: ".sec-r1"
     });
+
+    $(".benefit-slider").slick({});
   });
   
