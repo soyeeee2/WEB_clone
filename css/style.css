@@ -101,7 +101,7 @@
     display: block;
   }
   .sec-cal {
-    height: 600px;
+    height: 400px;
   }
   .sec-cal > h1 {
     text-align: center;
@@ -111,7 +111,6 @@
   .sec-cal > .sec-l {
     width: 33.3%;
     height: 100%;
-    background-color: #ddd;
   }
   .sec-cal > .sec-l > .calendar > .days > .day {
     width: calc(100% / 7);
@@ -174,7 +173,7 @@
   }
   .sec-r1 .slick-dots {
     bottom: 0px;
-    left: -50px;
+    left: -80px;
   }
   .sec-cal > .sec-r2 {
     width: 33.3%;
@@ -189,7 +188,7 @@
     background-color: #ddd;
     border-radius: 50px;
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     right: 0;
   }
   .sec-r2 > .view-all > p {
@@ -208,9 +207,12 @@
   }
   .sec-benefit > .content > .promotion-box > .promotion{
     width: 33.3%;
-    height: 50px;
+    height: 150px;
     border-radius: 20px;
     position: relative;
+    margin-left: 10px;
+    margin-right: 10px ;
+    box-sizing: border-box;
   }
   .sec-benefit > .content > .promotion-box > .promotion01{
     background-color: lightblue;
@@ -223,8 +225,24 @@
   }
   .sec-benefit > .content > .promotion-box > .promotion > p{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion > .btn-next{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion > .btn-next > p{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
   }
   /* 링크
   https://codepen.io/young-yoi/pen/LYOrzOR?editors=1100*/
