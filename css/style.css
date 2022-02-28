@@ -195,6 +195,9 @@
     text-align: center;
     line-height: 20px;
   }
+  .sec-benefit{
+    margin-top: 100px;
+  }
   .sec-benefit > .content > h1{
     text-align: center;
     text-transform: capitalize;
@@ -206,13 +209,14 @@
     margin: 0 auto;
   }
   .sec-benefit > .content > .promotion-box > .promotion{
-    width: 33.3%;
+    width: calc((100% - 40px)/3);
     height: 150px;
     border-radius: 20px;
     position: relative;
-    margin-left: 10px;
-    margin-right: 10px ;
-    box-sizing: border-box;
+    margin-right: 20px ;
+  }
+  .sec-benefit > .content > .promotion-box > .promotion:last-child{
+    margin-right: 0;
   }
   .sec-benefit > .content > .promotion-box > .promotion01{
     background-color: lightblue;
