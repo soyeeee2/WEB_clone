@@ -301,7 +301,7 @@
     text-align: center;
     text-transform: capitalize;
   }
-  .sec-travel > .section-wrap > .section-box{
+  .sec-travel > .section-wrap > .section-box > .section{
     width: calc((100%-120px)/4);
     background-color: blue;
     margin-right: 20px;
