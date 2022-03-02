@@ -258,6 +258,8 @@
   .sec-benefit > .content-wrap > .slider-wrap{
     margin: 0 auto;
     margin-top: 20px;
+    border-radius: 50px;
+    overflow: hidden;
   }  
   .sec-benefit > .content-wrap > .slider-wrap > .benefit-slider  .content > .img-box{
     width: 100%;
@@ -265,23 +267,54 @@
   }  
   .sec-benefit > .content-wrap > .slider-wrap > .view-all{
     margin: 0 auto;
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     background-color: black;
     color: white;
     border-radius: 50px;
     text-align: center;
-    line-height: 70px;
+    line-height: 50px;
+    position: relative;
+    margin-top: 40px;
   } 
+  .sec-benefit > .content-wrap > .slider-wrap .prev-arrow{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 30px;
+    z-index: 10;
+  }
+  .sec-benefit > .content-wrap > .slider-wrap .next-arrow{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 30px;
+  }
+  .sec-benefit > .content-wrap > .slider-wrap > .view-all > .next{
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  .sec-travel > .section-wrap > h1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
+  }
   .sec-travel > .section-wrap > .section-box{
-    width: calc((100%-40px)/4);
-    height: 200px;
+    width: calc((100%-120px)/4);
     background-color: blue;
     margin-right: 20px;
+    border-radius: 25px;
   }
   .sec-travel > .section-wrap > .section-box:nth-child(4n){
-    width: calc((100%-40px)/4);
-    height: 200px;
-    background-color: blue;
     margin-right: 0;
   }
+  .sec-travel > .section-wrap > .section-box > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
+    
+  }
+
+
+  <!-- 링크 https://github.com/soyeeee2/git_repo.git -->
