@@ -249,7 +249,7 @@
     bottom: 20px;
     left: 20px;
   }
-  .sec-benefit > .content-wrap > .promotion-box:hover > .promotion > .btn-next{
+  .sec-benefit > .content-wrap > .promotion-box > .promotion:hover > .btn-next{
     background-color: hotpink;
   }
   .sec-benefit > .content-wrap > .promotion-box > .promotion > .btn-next > p{
@@ -268,12 +268,12 @@
   .sec-benefit > .content-wrap > .slider-wrap{
     margin: 0 auto;
     margin-top: 20px;
-    border-radius: 50px;
     overflow: hidden;
   }  
   .sec-benefit > .content-wrap > .slider-wrap > .benefit-slider  .content > .img-box{
     width: 100%;
     padding-bottom: 50%;
+    border-radius: 40px;
   }  
   .sec-benefit > .content-wrap > .slider-wrap > .view-all{
     margin: 0 auto;
@@ -303,7 +303,7 @@
   .sec-benefit > .content-wrap > .slider-wrap > .view-all > .next{
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 25px;
   }
   .sec-travel > .section-wrap > h1{
     margin-top: 50px;
@@ -311,20 +311,31 @@
     text-align: center;
     text-transform: capitalize;
   }
-  .sec-travel > .section-wrap > .section-box > .section{
-    width: calc((100%-120px)/4);
+  .sec-travel > .section-wrap > .section-box{
+    width: calc((100% - 120px) / 4);
     background-color: blue;
     margin-right: 20px;
     border-radius: 25px;
+    overflow: hidden;
+    position: relative;
   }
-  .sec-travel > .section-wrap > .section:nth-child(4n){
+  .sec-travel > .section-wrap > .section-box:nth-child(4n){
     margin-right: 0;
   }
-  .sec-travel > .section-wrap > .section-box > .img-box{
+  .sec-travel > .section-wrap > .section-box > .section > .img-box{
     width: 100%;
     padding-bottom: 100%;
-    
+  }
+  .sec-travel > .section-wrap > .section-box > .section > .tag{
+    width: 20%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+  .sec-travel > .section-wrap > .section-box > .section > .tag > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
   }
 
 
-  <!-- 링크 https://github.com/soyeeee2/git_repo.git -->
+  /* https://github.com/soyeeee2/git_repo.git */
