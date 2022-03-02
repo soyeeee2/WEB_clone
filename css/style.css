@@ -175,6 +175,9 @@
     bottom: 0px;
     left: -80px;
   }
+  .sec-r1 .slick-dots li.slick-active button:before{
+    color: hotpink;
+  }
   .sec-cal > .sec-r2 {
     width: 33.3%;
     position: relative;
@@ -190,6 +193,10 @@
     position: absolute;
     bottom: -40px;
     right: 0;
+  }
+  .sec-r2 > .view-all:hover{
+    background-color: hotpink;
+    color: white;
   }
   .sec-r2 > .view-all > p {
     text-align: center;
@@ -241,6 +248,9 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
+  }
+  .sec-benefit > .content-wrap > .promotion-box:hover > .promotion > .btn-next{
+    background-color: hotpink;
   }
   .sec-benefit > .content-wrap > .promotion-box > .promotion > .btn-next > p{
     color: white;
@@ -307,7 +317,7 @@
     margin-right: 20px;
     border-radius: 25px;
   }
-  .sec-travel > .section-wrap > .section-box:nth-child(4n){
+  .sec-travel > .section-wrap > .section:nth-child(4n){
     margin-right: 0;
   }
   .sec-travel > .section-wrap > .section-box > .img-box{
