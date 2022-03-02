@@ -311,31 +311,155 @@
     text-align: center;
     text-transform: capitalize;
   }
-  .sec-travel > .section-wrap > .section-box{
+  .sec-travel > .section-wrap  .section-box{
     width: calc((100% - 120px) / 4);
-    background-color: blue;
     margin-right: 20px;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
-  .sec-travel > .section-wrap > .section-box:nth-child(4n){
+  .sec-travel > .section-wrap .section-box:nth-child(4n){
     margin-right: 0;
   }
-  .sec-travel > .section-wrap > .section-box > .section > .img-box{
+  .sec-travel > .section-wrap  .section-box > .section{
+    position: relative;
+  }
+  .sec-travel > .section-wrap  .section-box > .section > .img-box{
     width: 100%;
     padding-bottom: 100%;
+    border-radius: 25px;
+    overflow: hidden;
   }
-  .sec-travel > .section-wrap > .section-box > .section > .tag{
+  .sec-travel > .section-wrap  .section-box > .section > .tag{
     width: 20%;
     position: absolute;
     top: 2%;
     right: 2%;
   }
-  .sec-travel > .section-wrap > .section-box > .section > .tag > .img-box{
+  .sec-travel > .section-wrap  .section-box > .section > .tag > .img-box{
     width: 100%;
     padding-bottom: 100%;
+    position: relative;
   }
+  .sec-travel > .section-wrap  .section-box > .section > .tag > .img-box > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .sec-travel > .section-wrap  .section-box > .section > .btn-name{
+    height: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sec-travel > .section-wrap  .section-box > .section > .btn-name > p{
+    text-align: center;
+    line-height: 30px;
+  }
+  .sec-travel > .section-wrap  .section-box > .text{
+    padding-top: 20px;
+  }
+  .sec-travel > .section-wrap  .section-box > .text > .title{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .sec-travel > .section-wrap  .section-box > .text > .content{
+    font-weight: bold;
+    color: gray;
+    padding-top: 5px;
+  }
+  .sec-travel > .section-wrap > .view-all{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+  }
+  .sec-travel > .section-wrap > .view-all > p{}
+  
+  .sec-trend{
+    background-color: #ddd;
+  }
+  .sec-trend > .content-wrap > .content{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /* opacity: 0;
+    visibility: hidden; */
+  }
+  .sec-trend > .content-wrap > .content.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  .sec-trend > .content-wrap > .content > .trend-korea{
+    position: absolute;
+    top: 50px;
+  }
+  .sec-trend > .content-wrap > .content > .trend-korea > h1{
+    font-size: 70px;
+    text-transform: uppercase;
+  }
+  .sec-trend > .content-wrap > .content > .trend-korea > h1:first-child{
+    color: hotpink;
+  }
+  .sec-trend > .content-wrap > .content > .hashtags{
+    position: absolute;
+    top: 250px;
+  }
+  .sec-trend > .content-wrap > .content > .hashtags > .hashtag{
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .sec-trend > .content-wrap > .content > .hashtags > .hashtag.active{
+    color: hotpink;
+  }
+  .sec-trend > .content-wrap > .content > .main-img{
+    width: 45%;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+  .sec-trend > .content-wrap > .content > .main-img > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 40px;
+  }
+  .sec-trend > .content-wrap > .content > .main-img > .shopping{
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+  .sec-trend > .content-wrap > .content > .sub-img {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+  }
+  .sec-trend > .content-wrap > .content > .sub-img > .img-box{
+    width: 100%;
+    padding-bottom: 70%;
+    border-radius: 30px;
+  }
+  .sec-trend > .content-wrap > .content > .sub-img > .shopping{
+    height: 50px;
+    background-color: #fff;
+  }
+
+
 
 
   /* https://github.com/soyeeee2/git_repo.git */
