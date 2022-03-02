@@ -10,6 +10,9 @@ $(document).ready(function () {
       asNavFor: ".sec-r1"
     });
 
-    $(".benefit-slider").slick({});
+    $(".benefit-slider").slick({
+      dots: true,
+    
+    });
   });
   

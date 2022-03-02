@@ -259,15 +259,29 @@
     margin: 0 auto;
     margin-top: 20px;
   }  
-  .sec-benefit > .content-wrap > .slider-wrap > .benefit-slider > .content > .img-box{
+  .sec-benefit > .content-wrap > .slider-wrap > .benefit-slider  .content > .img-box{
     width: 100%;
-    height: 500px;
+    padding-bottom: 50%;
   }  
-  .sec-benefit > .content-wrap > .slider-wrap > .benefit-slider > .content > .view-all{
+  .sec-benefit > .content-wrap > .slider-wrap > .view-all{
     margin: 0 auto;
     width: 200px;
     height: 70px;
     background-color: black;
     color: white;
-
+    border-radius: 50px;
+    text-align: center;
+    line-height: 70px;
+  } 
+  .sec-travel > .section-wrap > .section-box{
+    width: calc((100%-40px)/4);
+    height: 200px;
+    background-color: blue;
+    margin-right: 20px;
+  }
+  .sec-travel > .section-wrap > .section-box:nth-child(4n){
+    width: calc((100%-40px)/4);
+    height: 200px;
+    background-color: blue;
+    margin-right: 0;
   }
