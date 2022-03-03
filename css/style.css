@@ -381,11 +381,21 @@
     margin: 0 auto;
     background-color: black;
     color: white;
+    border-radius: 30px;
+    line-height: 50px;
+    position: relative;
   }
-  .sec-travel > .section-wrap > .view-all > p{}
+  .sec-travel > .section-wrap > .view-all > .next{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+  }
   
   .sec-trend{
     background-color: #ddd;
+  }
+  .sec-trend > .content-wrap{
   }
   .sec-trend > .content-wrap > .content{
     position: relative;
@@ -433,16 +443,29 @@
     width: 100%;
     padding-bottom: 100%;
     border-radius: 40px;
+    position: relative;
   }
-  .sec-trend > .content-wrap > .content > .main-img > .shopping{
-    height: 50px;
+  .sec-trend > .content-wrap > .content > .main-img > .shopping > p > span{
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fff;
+    color: hotpink;
     text-align: center;
-    line-height: 50px;
+    font-weight: bold;
+    line-height: 28px;
     border-radius: 30px;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 65px;
+    left: 40px;
+  }
+  .sec-trend > .content-wrap > .content > .main-img > .text{
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
   }
   .sec-trend > .content-wrap > .content > .sub-img {
     width: 40%;
@@ -454,11 +477,26 @@
     padding-bottom: 70%;
     border-radius: 30px;
   }
-  .sec-trend > .content-wrap > .content > .sub-img > .shopping{
-    height: 50px;
+  .sec-trend > .content-wrap > .content > .sub-img > .shopping > p > span{
     background-color: #fff;
+    color: hotpink;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
   }
-
+  .sec-trend > .content-wrap > .content > .sub-img > .text{
+    position: absolute;
+    left: 130px;
+    bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
 
 
 
