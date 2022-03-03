@@ -16,15 +16,28 @@ $(document).ready(function () {
       nextArrow:'<i class="next-arrow fa-solid fa-angle-right"></i>',
     });
 
-    // $(".sec-trend .hashtag").click(function(){
-    //   var indexNum = $(this).index();
+    $(".sec-trend .hashtag").click(function(){
+      var indexNum = $(this).index()
+      $(this).addClass("active")
+      $(this).siblings().removeClass("active")
 
-    //   $(this).addClass("active")
-    //   $(this).siblings().removeClass("active")
+      $(".sec-trend .img-wrap").eq(indexNum).addClass("active")
+      $(".sec-trend .img-wrap").eq(indexNum).siblings().removeClass("active")
+    });
 
-    //   $(.sec-trend .content).eq(indexNum).addClass("active")
-    //   $(.sec-trend .content).eq(indexNum).siblings().removeClass("active")
-    // });
+    $(".sec-location .slider-location").slick({
+      infinite: false,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 2,
+    });
 
+
+    $(".sec-sns .slider-sns").slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 5,
+    });
+    
   });
   

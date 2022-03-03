@@ -23,6 +23,10 @@
     content: "";
     display: block;
   }
+  .con-xl{
+    width: 2000px;
+    margin: 0 auto;
+  }
   .con-l {
     width: 1440px;
     margin: 0 auto;
@@ -400,20 +404,14 @@
   .sec-trend > .content-wrap > .content{
     position: relative;
     width: 100%;
-    height: 800px;
-    /* opacity: 0;
-    visibility: hidden; */
-  }
-  .sec-trend > .content-wrap > .content.active{
-    opacity: 1;
-    visibility: visible;
+    height: 900px;
   }
   .sec-trend > .content-wrap > .content > .trend-korea{
     position: absolute;
-    top: 50px;
+    top: 90px;
   }
   .sec-trend > .content-wrap > .content > .trend-korea > h1{
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;
   }
   .sec-trend > .content-wrap > .content > .trend-korea > h1:first-child{
@@ -424,7 +422,7 @@
     top: 250px;
   }
   .sec-trend > .content-wrap > .content > .hashtags > .hashtag{
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: bold;
@@ -433,19 +431,27 @@
   .sec-trend > .content-wrap > .content > .hashtags > .hashtag.active{
     color: hotpink;
   }
-  .sec-trend > .content-wrap > .content > .main-img{
+  .sec-trend > .content-wrap > .content  .img-wrap{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sec-trend > .content-wrap > .content .img-wrap.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  .sec-trend > .content-wrap > .content  .main-img{
     width: 45%;
     position: absolute;
     top: 100px;
     right: 50px;
   }
-  .sec-trend > .content-wrap > .content > .main-img > .img-box{
+  .sec-trend > .content-wrap > .content  .main-img > .img-box{
     width: 100%;
     padding-bottom: 100%;
     border-radius: 40px;
     position: relative;
   }
-  .sec-trend > .content-wrap > .content > .main-img > .shopping > p > span{
+  .sec-trend > .content-wrap > .content  .main-img > .shopping > p > span{
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fff;
@@ -459,7 +465,7 @@
     bottom: 65px;
     left: 40px;
   }
-  .sec-trend > .content-wrap > .content > .main-img > .text{
+  .sec-trend > .content-wrap > .content  .main-img > .text{
     position: absolute;
     bottom: 30px;
     left: 45px;
@@ -467,17 +473,17 @@
     font-weight: bold;
     color: white;
   }
-  .sec-trend > .content-wrap > .content > .sub-img {
+  .sec-trend > .content-wrap > .content  .sub-img {
     width: 40%;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
   }
-  .sec-trend > .content-wrap > .content > .sub-img > .img-box{
+  .sec-trend > .content-wrap > .content  .sub-img > .img-box{
     width: 100%;
     padding-bottom: 70%;
     border-radius: 30px;
   }
-  .sec-trend > .content-wrap > .content > .sub-img > .shopping > p > span{
+  .sec-trend > .content-wrap > .content  .sub-img > .shopping > p > span{
     background-color: #fff;
     color: hotpink;
     padding-left: 10px;
@@ -489,13 +495,104 @@
     bottom: 20px;
     left: 15px;
   }
-  .sec-trend > .content-wrap > .content > .sub-img > .text{
+  .sec-trend > .content-wrap > .content  .sub-img > .text{
     position: absolute;
     left: 130px;
     bottom: 20px;
     font-size: 15px;
     font-weight: bold;
     color: white;
+  }
+  .sec-trend > .content-wrap > .content > .img-wrap02 > .sub-img > .text{
+    left:110px;
+  }
+  .sec-trend > .content-wrap > .content > .view-all{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+  }
+  .sec-trend > .content-wrap > .content > .view-all > p{
+    padding-left: 50px;
+  }
+  .sec-trend > .content-wrap > .content > .view-all > .next{
+    padding-left: 10px;
+  }
+  .sec-location{
+    width: 100%;
+    height: 600px;
+  }
+  .sec-location > .content-wrap{
+    margin-left: 440px ;
+  }
+  .sec-location > .content-wrap > h1{
+    text-transform: capitalize;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  .sec-location > .content-wrap > .tv{
+    height: 100%;
+    overflow: hidden;
+  }
+  .sec-location > .content-wrap > .tv > .slider-location .content{
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .sec-location > .content-wrap > .tv > .slider-location .content > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 30px;
+  }
+  .sec-location > .content-wrap > .tv > .slider-location .content > .text > h3,h4{
+    padding-top: 15px;
+  }
+  .sec-location > .content-wrap > .tv > .slider-location .content > .text > h3{
+    font-size: 22px;
+  }
+  .sec-location > .content-wrap > .tv > .slider-location .content > .text > h4{
+    color: hotpink;
+  }
+
+
+
+
+
+  .sec-sns{
+    width: 100%;
+    background-color: pink;
+  }
+  .sec-sns > .content-wrap > h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sec-sns > .content-wrap > .slider-sns  .content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-sns > .content-wrap > .slider-sns  .content > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+    border-radius: 30px;
+    position: relative;
+  }
+  .sec-sns > .content-wrap > .slider-sns  .content > .img-box > .insta{
+    width: 15%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+  .sec-sns > .content-wrap > .slider-sns  .content > .img-box > .insta > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
   }
 
 
