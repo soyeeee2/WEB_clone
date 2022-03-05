@@ -28,8 +28,9 @@ $(document).ready(function () {
     $(".sec-location .slider-location").slick({
       infinite: false,
       speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 2,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
     });
 
 

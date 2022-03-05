@@ -527,43 +527,38 @@
     width: 100%;
     height: 600px;
   }
-  .sec-location > .content-wrap{
-    margin-left: 440px ;
+  .sec-location  .content-wrap{
+    padding-left: 440px ;
   }
-  .sec-location > .content-wrap > h1{
+  .sec-location  .content-wrap > h1{
     text-transform: capitalize;
     padding-top: 50px;
     padding-bottom: 30px;
     padding-left: 20px;
   }
-  .sec-location > .content-wrap > .tv{
+  .sec-location > .tv{
     height: 100%;
     overflow: hidden;
   }
-  .sec-location > .content-wrap > .tv > .slider-location .content{
+  .sec-location .content-wrap  > .slider-location .content{
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
   }
-  .sec-location > .content-wrap > .tv > .slider-location .content > .img-box{
+  .sec-location .content-wrap  > .slider-location .content > .img-box{
     width: 100%;
     padding-bottom: 100%;
     border-radius: 30px;
   }
-  .sec-location > .content-wrap > .tv > .slider-location .content > .text > h3,h4{
+  .sec-location .content-wrap  > .slider-location .content > .text > h3,h4{
     padding-top: 15px;
   }
-  .sec-location > .content-wrap > .tv > .slider-location .content > .text > h3{
+  .sec-location .content-wrap > .slider-location .content > .text > h3{
     font-size: 22px;
   }
-  .sec-location > .content-wrap > .tv > .slider-location .content > .text > h4{
+  .sec-location  .content-wrap  > .slider-location .content > .text > h4{
     color: hotpink;
   }
-
-
-
-
-
   .sec-sns{
     width: 100%;
     background-color: pink;
@@ -573,9 +568,13 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .sec-sns > .content-wrap > .slider-sns{
+    box-sizing: border-box;
+  }
   .sec-sns > .content-wrap > .slider-sns  .content{
     padding-left: 20px;
     padding-right: 20px;
+    
   }
   .sec-sns > .content-wrap > .slider-sns  .content > .img-box{
     width: 100%;
@@ -583,6 +582,15 @@
     display: block;
     border-radius: 30px;
     position: relative;
+  }
+  .sec-sns > .content-wrap > .slider-sns  .content.slick-center{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .sec-sns > .content-wrap > .slider-sns  .content.slick-center > .img-box{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
   }
   .sec-sns > .content-wrap > .slider-sns  .content > .img-box > .insta{
     width: 15%;
