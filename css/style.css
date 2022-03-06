@@ -563,6 +563,9 @@
     width: 100%;
     background-color: pink;
   }
+  .sec-sns > .content-wrap{
+    padding-bottom: 100px;
+  }
   .sec-sns > .content-wrap > h1{
     text-align: center;
     padding-top: 50px;
@@ -587,11 +590,11 @@
     margin-left: 50px;
     margin-right: 50px;
   }
-  .sec-sns > .content-wrap > .slider-sns  .content.slick-center > .img-box{
+  /* .sec-sns > .content-wrap > .slider-sns  .content.slick-center > .img-box{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-  }
+  } */
   .sec-sns > .content-wrap > .slider-sns  .content > .img-box > .insta{
     width: 15%;
     position: absolute;
@@ -601,6 +604,48 @@
   .sec-sns > .content-wrap > .slider-sns  .content > .img-box > .insta > .img-box{
     width: 100%;
     padding-bottom: 100%;
+  }
+
+  .sec-sns > .content-wrap > .bar-wrap{
+    margin: 0 auto;
+    width: 50%;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 50px;
+  }
+  .sec-sns > .content-wrap > .bar-wrap > .bar{
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    transition: 2s;
+  }
+  .sec-sns > .content-wrap > .bar-wrap > .bar.active{
+    width: calc(100% / 6);
+  }
+  .promotion-box{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .promotion-box > .img-box{
+    width: 100%;
+    padding-bottom: 16.6%;
+    border-radius: 30px;
+  }
+  .slider-support{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .slider-support > .content > .img{
+
+  }
+  .footer{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    line-height: 100px;
   }
 
 
