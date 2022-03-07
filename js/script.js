@@ -42,7 +42,10 @@ $(document).ready(function () {
       // autoplaySpeed: 2000,
     });
     
-  
+    $('.sec-sns').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      $(".sec-sns .bar").eq(nextSlide).addClass("active")
+      $(".sec-sns .bar").eq(nextSlide).siblings().removeClass("active")
+    });
 
     $(".slider-support").slick({
       slidesToShow: 3,
