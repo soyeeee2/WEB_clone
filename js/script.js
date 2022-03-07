@@ -42,18 +42,14 @@ $(document).ready(function () {
       // autoplaySpeed: 2000,
     });
     
-    // setInterval(function(){
-    //   for(var indexNum=0; indexNum<6; indexNum++;){
-    //     $(".sec-sns .bar").eq(indexNum).addClass("active")
-    //     $(".sec-sns .bar").eq(indexNum).siblings().removeClass("active")
-    //   }
-    // },2000);
+  
 
     $(".slider-support").slick({
-      slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       prevArrow:'<i class="prev-arrow fa-solid fa-angle-left"></i>',
       nextArrow:'<i class="next-arrow fa-solid fa-angle-right"></i>',
+      variableWidth: true
     });
   });
   
