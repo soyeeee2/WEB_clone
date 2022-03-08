@@ -38,13 +38,13 @@ $(document).ready(function () {
       centerMode: true,
       centerPadding: '60px',
       slidesToShow: 5,
-      // autoplay: true,
-      // autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 2000,
     });
     
     $('.sec-sns').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-      $(".sec-sns .bar").eq(nextSlide).addClass("active")
-      $(".sec-sns .bar").eq(nextSlide).siblings().removeClass("active")
+      $(".sec-sns .bar-box").eq(nextSlide).addClass("active")
+      $(".sec-sns .bar-box").eq(nextSlide).siblings().removeClass("active")
     });
 
     $(".slider-support").slick({
@@ -52,7 +52,22 @@ $(document).ready(function () {
       slidesToScroll: 3,
       prevArrow:'<i class="prev-arrow fa-solid fa-angle-left"></i>',
       nextArrow:'<i class="next-arrow fa-solid fa-angle-right"></i>',
-      variableWidth: true
+      variableWidth: true,
+    });
+
+    $(".up-btn").click(function(){
+      $("html,body").animate({
+        "scrollTop" : "0"
+      },500)
     });
   });
   
+
+$(window).scroll(function(){
+  var thisScrollTop = $(this).scrollTop();
+  if(thisScrollTop < 100){
+    $(".up-btn").removeClass("active")
+  } else{
+    $(".up-btn").addClass("active")
+  }
+});

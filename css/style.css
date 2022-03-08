@@ -399,8 +399,6 @@
   .sec-trend{
     background-color: #f7f7f7;
   }
-  .sec-trend > .content-wrap{
-  }
   .sec-trend > .content-wrap > .content{
     position: relative;
     width: 100%;
@@ -587,15 +585,6 @@
     border-radius: 30px;
     position: relative;
   }
-  .sec-sns > .content-wrap > .slider-sns  .content.slick-center{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  /* .sec-sns > .content-wrap > .slider-sns  .content.slick-center > .img-box{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-  } */
   .sec-sns > .content-wrap > .slider-sns  .content > .img-box > .insta{
     width: 15%;
     position: absolute;
@@ -614,14 +603,18 @@
     background-color: #ddd;
     margin-top: 50px;
   }
-  .sec-sns > .content-wrap > .bar-wrap > .bar{
-    width: 0%;
+  .sec-sns > .content-wrap > .bar-wrap > .bar-box{
+    width: calc(100% / 6);
+    height: 100%;
+  }
+  .sec-sns > .content-wrap > .bar-wrap > .bar-box > .bar{
+    width: 0;
     height: 100%;
     background-color: black;
-    transition: 2s;
   }
-  .sec-sns > .content-wrap > .bar-wrap > .bar.active{
-    width: calc(100% / 6);
+  .sec-sns > .content-wrap > .bar-wrap > .bar-box.active > .bar{
+    width: 100%;
+    transition: 2s;
   }
   .promotion-box{
     margin: 0 auto;
@@ -720,7 +713,7 @@
     width: 100%;
     padding-bottom: 100%;
   }
-  .footer > .footer-bottom > .content-top > .icon-box > .icon:hover > .hover-box{
+  .footer > .footer-bottom > .content-top > .icon-box > .icon > .hover-box{
     width: 100%;
     padding-bottom: 100%;
     position: absolute;
@@ -729,6 +722,64 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
   }
-
+  .footer > .footer-bottom > .content-top > .icon-box > .icon:hover > .hover-box{
+    opacity: 1;
+    visibility: visible;
+  }
+  .footer > .footer-bottom > .content-bottom > .info{
+    margin-top: 60px;
+    color: #919191;
+  }
+  .footer > .footer-bottom > .content-bottom > .info > .host > .host-img{
+    width: 150px;
+    margin-left: 20px;
+  }
+  .footer > .footer-bottom > .content-bottom > .info > .host > .host-img > .img-box{
+    width: 100%;
+    padding-bottom: 17%;
+  }
+  .footer > .footer-bottom > .content-bottom > .info > .family-site > .family-img{
+    width: 180px;
+    margin-left: 30px;
+  } 
+  .footer > .footer-bottom > .content-bottom > .info > .family-site > .family-img > .img-box{
+    width: 100%;
+    padding-bottom: 15%;
+  }
+  .up-btn{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .up-btn.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  .up-btn > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  .travel-tip{
+    width: 150px;
+    position: fixed;
+    top: 300px;
+    right: 0;
+  }
+  .travel-tip > .img-box{
+    width: 100%;
+    padding-bottom: 130%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+  }
   /* https://github.com/soyeeee2/git_repo.git */
