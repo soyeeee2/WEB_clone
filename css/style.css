@@ -41,15 +41,8 @@ a {
   width: 100%;
   background-color: #ddd;
 }
-.top-menu-wrap > .top-menu{
-  position: relative;
-}
 .top-menu-wrap > .top-menu > .main-logo{
   width: 15%;
-  /* padding-right: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
 }
 .top-menu-wrap > .top-menu > .main-logo > .img-box{
   width: 100%;
