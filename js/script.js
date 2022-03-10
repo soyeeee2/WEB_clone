@@ -1,3 +1,4 @@
 $(document).ready(function(){
-  $(".main-slider").slick({});
+  $(".main-slider").slick({
+  });
 });
