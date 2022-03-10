@@ -28,7 +28,7 @@ a {
   margin: 0 auto;
 }
 .con-s {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .img-box {
@@ -85,12 +85,15 @@ a {
 .top-menu-wrap > .top-menu-on{
   background-color: white;
   color: #666;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
   /* opacity: 0;
   visibility: hidden; */
 }
 .top-menu-wrap:hover > .top-menu-on{
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 1;
+  visibility: visible;
 }
 .top-menu-wrap > .top-menu-on > ul > li > a > p{
   position: relative;
@@ -114,6 +117,7 @@ a {
   background-color: #ddd;
   color: #666;
   font-size: 1vw;
+  
 }
 .top-menu-wrap > .sub-menu > .menu-wrap{
   background-color: blue;
@@ -150,6 +154,189 @@ a {
   display: inline-block;
   padding: 0 10px;
 }
-
-
+.main-slider-wrap > .dots-wrap{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-slider-wrap > .dots-wrap > .dots{
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.main-slider-wrap > .dots-wrap > .dots.active{
+  background-color: white;
+}
+/* 메인 슬라이더 끝 */
+/* 프로덕트 시작 */
+.sec-product > .content-wrap{
+  position: relative;
+}
+.sec-product > .content-wrap > .pro-slider .product{
+  position: relative;
+}
+.sec-product > .content-wrap > .pro-slider .product > .img-box{
+  width: 100%;
+  padding-bottom: 135%;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1vw;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box > i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1dcb5d;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box:hover{
+  background-color: black;
+  color: white;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box > p{
+  padding: 0px 5px;
+}
+.sec-product > .content-wrap > .text-box{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.sec-product > .content-wrap > .text-box > h1{
+  padding-bottom: 20px;
+}
+/* 프로덕트 끝 */
+/* 소식 시작 */
+.sec-news{
+  padding-top: 70px;
+}
+.sec-news > .content-wrap > h1{
+  padding-bottom: 20px;
+}
+.sec-news > .content-wrap > h2{
+  padding-bottom: 20px;
+}
+.sec-news > .content-wrap > .news-box > .news{
+  width: calc((100% - 40px) / 3);
+  margin-right: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.sec-news > .content-wrap > .news-box > .news:last-child{
+  margin-right: 0;
+}
+.sec-news > .content-wrap > .news-box > .news > .img-box{
+  width: 100%;
+  padding-bottom: 85%;
+  background-position: top;
+  background-size: 100% ;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .news-box > .news:hover > .img-box{
+  background-size: 105%;
+}
+.sec-news > .content-wrap > .news-box > .news > .text-box{
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .news-box > .news:hover > .text-box{
+  top: 50%;
+}
+.sec-news > .content-wrap > .news-box > .news > .text-box > h3{
+  font-size: 1.1vw;
+  font-weight: bold;
+  padding: 20px;
+}
+.sec-news > .content-wrap > .news-box > .news > .text-box > p{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 1vw;
+  color: #666;
+}
+.sec-news > .content-wrap > .more-box{
+  width: 20%;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .more-box:hover{
+  background-color: black;
+  color: white;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs{
+  width: calc((100% - 20px) / 2);
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs:first-child{
+  margin-right: 20px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .img-box{
+  width: 100%;
+  padding-bottom: 20%;
+  border-radius: 15px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .text-box{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: red;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .text-box > h1{
+  font-size: 1.5vw;
+  padding-bottom: 10px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .text-box > h2{
+  font-size: 1vw;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box{
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 1vw;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover{
+  background-color: #1dcb5d;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box > i{
+  color: #1dcb5d;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover > i{
+  color: white;
+}
+/* 소식 끝 */
 /* https://github.com/soyeeee2/neoforet_copy.git */
