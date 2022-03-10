@@ -61,7 +61,6 @@ a {
   text-align: center;
 }
 .top-menu-wrap > .top-menu > ul{
-  background-color: #ddd;
   margin: 0 auto;
   display: inline-block;
   vertical-align: top;
@@ -109,13 +108,16 @@ a {
 .top-menu-wrap > .top-menu-on > ul > li:hover > a > p::after{
   width: 100%;
 }
-.top-menu-wrap > .top-menu-on > .sub-menu{
+.top-menu-wrap > .sub-menu{
   width: 100%;
   height: 50px;
   background-color: #ddd;
+  color: #666;
+  font-size: 1vw;
 }
-.top-menu-wrap > .top-menu-on > .sub-menu > .menu-wrap{
-  margin: 0 auto;
+.top-menu-wrap > .sub-menu > .menu-wrap{
+  background-color: blue;
+  display: inline-block;
 }
 /* 탑 메뉴 끝 */
 /* 메인 슬라이더 시작 */
