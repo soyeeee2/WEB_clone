@@ -9,8 +9,14 @@ $(document).ready(function(){
     $(".main-slider-wrap .dots").eq(nextSlide).siblings().removeClass("active")
   });
 
+  $(".main-slider-wrap .dots").click(function(){
+    var indexNum = $(this).index();
+    $(this).addClass("active")
+    $(this).siblings().removeClass("active")
+    $(".main-slider").slick("slickGoTo",indexNum)
+  });
+
   $(".pro-slider").slick({
-    dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 3,
@@ -22,7 +28,6 @@ $(document).ready(function(){
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: false,
-          dots: true
         }
       }
     ],

@@ -48,7 +48,7 @@ a {
   transition: 0.5s;
 }
 .top-menu-wrap > .top-menu > .main-logo{
-  width: 15%;
+  width: 152px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -140,6 +140,7 @@ a {
   left: 50%;
   transform: translate(-50% , -50%);
   text-align: center;
+  color: white;
 }
 .main-slider-wrap  .text-wrap > h1{
   text-transform: capitalize;
@@ -149,11 +150,32 @@ a {
   font-size: 1vw;
 }
 .main-slider-wrap  .text-wrap > .more-box{
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 20px;
   font-size: 1vw;
   display: inline-block;
-  padding: 0 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 30px;
+  margin-top: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+.main-slider-wrap  .text-wrap > .more-box:hover{
+  background-color: #1dcb5d;
+  border-color: #1dcb5d;
+}
+.main-slider-wrap  .text-wrap > .more-box > .next{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: #1dcb5d;
+  transition: 0.5s;
+}
+.main-slider-wrap  .text-wrap > .more-box:hover > .next{
+  color: white;
 }
 .main-slider-wrap > .dots-wrap{
   position: absolute;
@@ -320,12 +342,12 @@ a {
   background-color: black;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 5%;
   transform: translateY(-50%);
   font-size: 1vw;
   border-radius: 30px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 20px;
   transition: 0.5s;
 }
 .sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover{
@@ -334,9 +356,66 @@ a {
 .sec-news > .content-wrap > .cs-wrap > .cs > .more-box > i{
   color: #1dcb5d;
   transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 5px;
 }
 .sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover > i{
   color: white;
 }
 /* 소식 끝 */
+/* 푸터 시작 */
+.footer{
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.footer > .content-wrap{
+  position: relative;
+}
+.footer > .content-wrap > .footer-img{
+  width: 196px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+.footer > .content-wrap > .footer-img > .img-box{
+  width: 100%;
+  padding-bottom: 23%;
+}
+.footer > .content-wrap > .text-box{
+  font-size: 0.7vw;
+}
+.footer > .content-wrap > .text-box > ul > li{
+  margin-right: 10px;
+  left: 0;
+}
+.footer > .content-wrap > .text-box > ul > li::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: black;
+  top: 0;
+}
+.footer > .content-wrap > .murim-box{
+  background-color: #cacaca;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  color: white;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer > .content-wrap > .murim-box > p{
+  font-size: 1vw;
+}
+.footer > .content-wrap > .murim-box > i{
+  font-size: 1vw;
+}
+
+/* 푸터 끝 */
 /* https://github.com/soyeeee2/neoforet_copy.git */
