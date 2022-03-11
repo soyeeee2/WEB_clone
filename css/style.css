@@ -45,6 +45,7 @@ a {
 }
 .top-menu-wrap > .top-menu {
   position: relative;
+  transition: 0.5s;
 }
 .top-menu-wrap > .top-menu > .main-logo{
   width: 15%;
@@ -56,6 +57,18 @@ a {
 .top-menu-wrap > .top-menu > .main-logo > .img-box{
   width: 100%;
   padding-bottom: 23%;
+}
+.top-menu-wrap > .top-menu > .main-logo > .hover-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.top-menu-wrap:hover > .top-menu > .main-logo > .hover-box{
+  opacity: 1;
+  visibility: visible;
 }
 .top-menu-wrap > .top-menu{
   text-align: center;
@@ -82,23 +95,11 @@ a {
 .top-menu-wrap > .top-menu > .more > .sns-wrap{
   margin-right: 10px;
 }
-.top-menu-wrap > .top-menu-on{
+.top-menu-wrap:hover > .top-menu{
   background-color: white;
   color: #666;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
-  /* opacity: 0;
-  visibility: hidden; */
 }
-.top-menu-wrap:hover > .top-menu-on{
-  opacity: 1;
-  visibility: visible;
-}
-.top-menu-wrap > .top-menu-on > ul > li > a > p{
-  position: relative;
-}
-.top-menu-wrap > .top-menu-on > ul > li > a > p::after{
+.top-menu-wrap > .top-menu > ul > li > a > p::after{
   content: "";
   display: block;
   width: 0%;
@@ -108,7 +109,7 @@ a {
   position: absolute;
   top: calc(50% + 1vw);
 } 
-.top-menu-wrap > .top-menu-on > ul > li:hover > a > p::after{
+.top-menu-wrap > .top-menu > ul > li:hover > a > p::after{
   width: 100%;
 }
 .top-menu-wrap > .sub-menu{
@@ -119,9 +120,9 @@ a {
   font-size: 1vw;
   
 }
-.top-menu-wrap > .sub-menu > .menu-wrap{
+.top-menu-wrap > .sub-menu > .menu-wrap > ul{
   background-color: blue;
-  display: inline-block;
+  text-align: center;
 }
 /* 탑 메뉴 끝 */
 /* 메인 슬라이더 시작 */
@@ -304,10 +305,9 @@ a {
 }
 .sec-news > .content-wrap > .cs-wrap > .cs > .text-box{
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 5%;
   transform: translateY(-50%);
-  background-color: red;
 }
 .sec-news > .content-wrap > .cs-wrap > .cs > .text-box > h1{
   font-size: 1.5vw;
