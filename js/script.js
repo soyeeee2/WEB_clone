@@ -33,9 +33,30 @@ $(document).ready(function(){
     ],
   });
 
+  $(".sec-product .btn-left").click(function(){
+    $(".pro-slider").slick("slickPrev")
+  }); 
+  $(".sec-product .btn-right").click(function(){
+    $(".pro-slider").slick("slickNext")
+  });
+  $(".sec-product .dots > .dot").click(function(){
+    $(".pro-slider").slick("slickGoTo")
+  });
+
+
   $(".top-menu > ul > li").hover(function(){
     var indexNum = $(this).index();
     $(".sub-menu > .menu-wrap").eq(indexNum).addClass("active")
     $(".sub-menu > .menu-wrap").eq(indexNum).siblings().removeClass("active")
+  });
+
+  $(".top-menu > ul > li").mouseleave(function(){
+    $(".sub-menu > .menu-wrap").removeClass("active")
+  });
+
+  $(".up-btn").click(function(){
+    $("html, body").animate({
+      "scrollTop" : "0"
+    },1000)
   });
 });

@@ -45,7 +45,6 @@ a {
 }
 .top-menu-wrap > .top-menu {
   position: relative;
-  transition: 0.5s;
 }
 .top-menu-wrap > .top-menu > .main-logo{
   width: 152px;
@@ -66,7 +65,7 @@ a {
   visibility: hidden;
   transition: 0.5s;
 }
-.top-menu-wrap:hover > .top-menu > .main-logo > .hover-box{
+.top-menu-wrap > .top-menu:hover > .main-logo > .hover-box{
   opacity: 1;
   visibility: visible;
 }
@@ -76,13 +75,12 @@ a {
 .top-menu-wrap > .top-menu > ul{
   margin: 0 auto;
   display: inline-block;
-  vertical-align: top;
 }
-.top-menu-wrap > .top-menu > ul > li{
+.top-menu-wrap > .top-menu > ul > li > a{
   margin-left: 40px;
   margin-right: 40px;
   font-size: 1vw;
-  line-height: 100px;
+  padding: 50px 0px;
 }
 .top-menu-wrap > .top-menu > .more{
   font-size: 1vw;
@@ -95,9 +93,12 @@ a {
 .top-menu-wrap > .top-menu > .more > .sns-wrap{
   margin-right: 10px;
 }
-.top-menu-wrap:hover > .top-menu{
+.top-menu-wrap > .top-menu:hover{
   background-color: white;
   color: #666;
+}
+.top-menu-wrap > .top-menu > ul > li > a{
+  display: inline-block;
 }
 .top-menu-wrap > .top-menu > ul > li > a > p::after{
   content: "";
@@ -106,8 +107,6 @@ a {
   height: 3px;
   background-color: #1dcb5d;
   transition: 0.5s;
-  position: absolute;
-  top: calc(50% + 1vw);
 } 
 .top-menu-wrap > .top-menu > ul > li:hover > a > p::after{
   width: 100%;
@@ -115,12 +114,6 @@ a {
 .top-menu-wrap > .sub-menu{
   position: relative;
   font-size: 1vw;
-  opacity: 0;
-  visibility: hidden;
-}
-.top-menu-wrap:hover > .sub-menu{
-  opacity: 1;
-  visibility: visible;
 }
 .top-menu-wrap > .sub-menu > .menu-wrap{
   width: 100%; 
@@ -130,7 +123,6 @@ a {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
 }
 .top-menu-wrap > .sub-menu > .menu-wrap.active{
   opacity: 1;
@@ -139,6 +131,8 @@ a {
 .top-menu-wrap > .sub-menu > .menu-wrap > ul{
   display: inline-block;
   line-height: 50px;
+  vertical-align: top;
+  z-index: 1000;
 }
 .top-menu-wrap > .sub-menu > .menu-wrap > ul > li{
   width: 200px;
@@ -147,12 +141,17 @@ a {
 .top-menu-wrap > .sub-menu > .menu-wrap > ul > li:last-child{
   border-right: 1px solid #678;
 }
-.top-menu-wrap > .sub-menu > .menu-wrap02{
-  height: 250px;
+.top-menu-wrap > .sub-menu > .menu-wrap02::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 50px;
 }
 .top-menu-wrap > .sub-menu > .menu-wrap02 > ul > li {
   height: 250px;
-  background-color: red;
 }
 /* 탑 메뉴 끝 */
 /* 메인 슬라이더 시작 */
@@ -270,6 +269,35 @@ a {
 .sec-product > .content-wrap > .text-box > h1{
   padding-bottom: 20px;
 }
+
+.sec-product > .content-wrap > .btn-wrap{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  display: flex;
+  text-align: center;
+  line-height: 50px;
+}
+.sec-product > .content-wrap > .btn-wrap > .btn{
+  width: 25%;
+  height: 100%;
+  font-size: 18px;
+}
+.sec-product > .content-wrap > .btn-wrap > .dots{
+  width: 50%;
+  height: 100%;
+}
+.sec-product > .content-wrap > .btn-wrap > .dots > .dot{
+  display: inline-block;
+  font-size: 10px;
+  margin: 0 3px;
+  color: rgba(0,0,0,0.3);
+}
+.sec-product > .content-wrap > .btn-wrap > .dots > .dot.active{
+  color: black;
+}
 /* 프로덕트 끝 */
 /* 소식 시작 */
 .sec-news{
@@ -377,7 +405,7 @@ a {
   font-size: 1vw;
   border-radius: 30px;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 30px;
   transition: 0.5s;
 }
 .sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover{
@@ -417,16 +445,19 @@ a {
   font-size: 0.7vw;
 }
 .footer > .content-wrap > .text-box > ul > li{
-  margin-right: 10px;
-  left: 0;
+  display: inline-block;
 }
 .footer > .content-wrap > .text-box > ul > li::after{
   content: "";
-  display: block;
+  display: inline-block;
   width: 1px;
   height: 12px;
   background-color: black;
-  top: 0;
+  margin: 0px 5px;
+  vertical-align: bottom;
+}
+.footer > .content-wrap > .text-box > ul > li:last-child:after{
+  width: 0;
 }
 .footer > .content-wrap > .murim-box{
   background-color: #cacaca;
@@ -435,17 +466,31 @@ a {
   right: 0;
   color: white;
   border-radius: 50px;
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.footer > .content-wrap > .murim-box:hover{
+  background-color: gray;
 }
 .footer > .content-wrap > .murim-box > p{
   font-size: 1vw;
+  display: inline-block;
 }
 .footer > .content-wrap > .murim-box > i{
   font-size: 1vw;
 }
-
 /* 푸터 끝 */
+
+.up-btn{
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
 /* https://github.com/soyeeee2/neoforet_copy.git */
