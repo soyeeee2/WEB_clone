@@ -65,7 +65,7 @@ a {
   visibility: hidden;
   transition: 0.5s;
 }
-.top-menu-wrap > .top-menu:hover > .main-logo > .hover-box{
+.top-menu-wrap > .top-menu.active > .main-logo > .hover-box{
   opacity: 1;
   visibility: visible;
 }
@@ -93,7 +93,7 @@ a {
 .top-menu-wrap > .top-menu > .more > .sns-wrap{
   margin-right: 10px;
 }
-.top-menu-wrap > .top-menu:hover{
+.top-menu-wrap > .top-menu.active{
   background-color: white;
   color: #666;
 }
@@ -108,7 +108,7 @@ a {
   background-color: #1dcb5d;
   transition: 0.5s;
 } 
-.top-menu-wrap > .top-menu > ul > li:hover > a > p::after{
+.top-menu-wrap > .top-menu > ul > li.active > a > p::after{
   width: 100%;
 }
 .top-menu-wrap > .sub-menu{
@@ -133,10 +133,13 @@ a {
   line-height: 50px;
   vertical-align: top;
   z-index: 1000;
+
 }
 .top-menu-wrap > .sub-menu > .menu-wrap > ul > li{
   width: 200px;
   border-left: 1px solid #678;
+  position: relative;
+  z-index: 9;
 }
 .top-menu-wrap > .sub-menu > .menu-wrap > ul > li:last-child{
   border-right: 1px solid #678;
@@ -285,6 +288,9 @@ a {
   height: 100%;
   font-size: 18px;
 }
+.sec-product > .content-wrap > .btn-wrap > .btn.active{
+  color: gray;
+}
 .sec-product > .content-wrap > .btn-wrap > .dots{
   width: 50%;
   height: 100%;
@@ -332,7 +338,7 @@ a {
 }
 .sec-news > .content-wrap > .news-box > .news > .text-box{
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 30%;
   background-color: white;
   position: absolute;
   top: 60%;
