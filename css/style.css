@@ -41,6 +41,11 @@ a {
   vertical-align: top;
   box-sizing: border-box;
 }
+/* 커스텀 */
+section > .bg-img > .img-box{
+  width: 100%;
+  padding-bottom: 55%;
+}
 /* 스타일 */
 header > .top-header{
   width: 100%;
@@ -113,15 +118,11 @@ header > .btm-header > nav > ul > li{
   width: 100%;
   padding-bottom: 28.5%;
 }
-.sec00 > .sec-video{
+.sec-video{
   width: 100%;
   position: relative;
 }
-.sec00 > .sec-video > .img-box{
-  width: 100%;
-  padding-bottom: 55%;
-}
-.sec00 > .sec-video > iframe{
+.sec-video > iframe{
   position: absolute;
   width: 63%;
   height: 65%;
@@ -129,4 +130,22 @@ header > .btm-header > nav > ul > li{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+/* 위트에일 시작 */
+
+.wit > .content-wrap{
+  position: relative;
+}
+.wit > .bg-img > .content-wrap > .title{
+  position: absolute;
+  top: 20%;
+}
+section > .content-wrap > .title{
+  width: 30%;
+}
+section > .content-wrap > .title > .img-box{
+  width: 100%;
+  padding-bottom: 27%;
+  background-color: red;
+}
+/* 위트에일 끝 */
 /* https://soyeeee2.github.io/jeju-beer_copy/ */
