@@ -41,11 +41,6 @@ a {
   vertical-align: top;
   box-sizing: border-box;
 }
-/* 커스텀 */
-section > .bg-img > .img-box{
-  width: 100%;
-  padding-bottom: 55%;
-}
 /* 폰트 */
 @font-face {
   font-family: 'SpoqaHanSansNeo-Regular';
@@ -94,7 +89,7 @@ header > .mid-header > .btn-box{
   transform: translateY(-50%);
   margin-right: 50px;
 }
-header > .mid-header > .btn-box > .btn {
+header > .mid-header > .btn-box > .btn > a {
   background-color: #1ecad3;
   color: #fff;
   padding: 5px 20px;
@@ -104,9 +99,6 @@ header > .mid-header > .btn-box > .btn {
 }
 header > .mid-header > .btn-box > .btn:hover{
   background-color: #fff;
-}
-header > .mid-header > .btn-box > .btn > a{
-  background-color: red;
 }
 header > .btm-header{
   width: 100%;
@@ -154,22 +146,52 @@ header > .btm-header > nav > ul > li:hover{
   left: 50%;
   transform: translate(-50%,-50%);
 }
-/* 위트에일 시작 */
-
-.wit > .content-wrap{
-  position: relative;
-}
-.wit > .bg-img > .content-wrap > .title{
-  position: absolute;
-  top: 20%;
-}
-section > .content-wrap > .title{
-  width: 30%;
-}
-section > .content-wrap > .title > .img-box{
+/* 에일 커스텀 시작 */
+section{
   width: 100%;
-  padding-bottom: 27%;
+  padding-bottom: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section > .con{
+  width: 100%;
   background-color: red;
 }
-/* 위트에일 끝 */
+section > .con > .title{
+  width: 25%;
+  margin: 0 auto;
+}
+section > .con > .title > .img-box{
+  width: 100%;
+  padding-bottom: 27%;
+}
+section > .con > .doz-row{
+  display: flex;
+}
+section > .con > .doz-row > .ale{
+  width: 18%;
+}
+section > .con > .doz-row > .ale > .img-box{
+  width: 100%;
+  padding-bottom: 110% ;
+}
+section > .con > .doz-row > .text{
+  font-size: 20px;
+  padding-right: 100px;
+  color: #fff;
+}
+section > .con > .main-slider{
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+section > .con > .main-slider .content > .img-box{
+  width: 100%;
+  padding-bottom: 70%;
+}
+/* 에일 커스텀 끝 */
+
+
+
 /* https://soyeeee2.github.io/jeju-beer_copy/ */
