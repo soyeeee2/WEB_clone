@@ -149,14 +149,10 @@ header > .btm-header > nav > ul > li:hover{
 /* 에일 커스텀 시작 */
 section{
   width: 100%;
-  padding-bottom: 80%;
+  padding-bottom: 55%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
-}
-section > .con{
-  width: 100%;
-  background-color: red;
 }
 section > .con > .title{
   width: 25%;
@@ -168,9 +164,11 @@ section > .con > .title > .img-box{
 }
 section > .con > .doz-row{
   display: flex;
+  margin-top: 450px;
+  position: relative;
 }
 section > .con > .doz-row > .ale{
-  width: 18%;
+  width: 25%;
 }
 section > .con > .doz-row > .ale > .img-box{
   width: 100%;
@@ -178,15 +176,47 @@ section > .con > .doz-row > .ale > .img-box{
 }
 section > .con > .doz-row > .text{
   font-size: 20px;
-  padding-right: 100px;
   color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
 }
 section > .con > .main-slider{
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
+  margin-top: 30px;
+  position: relative;
 }
 section > .con > .main-slider .content > .img-box{
+  width: 100%;
+  padding-bottom: 60%;
+}
+.main-slider .fa-chevron-left:before,
+.sub-slider .fa-chevron-left:before{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: 999;
+  font-size: 50px;
+  color: #fff;
+}
+.main-slider .fa-chevron-right:before,
+.sub-slider .fa-chevron-right:before{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 999;
+  font-size: 50px;
+  color: #fff;
+}
+section > .con > .sub-slider{
+  position: relative;
+}
+section > .con > .sub-slider .content{
+  padding: 5px;
+}
+section > .con > .sub-slider .content > .img-box{
   width: 100%;
   padding-bottom: 70%;
 }
