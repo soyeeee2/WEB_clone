@@ -167,12 +167,22 @@ section > .con > .doz-row{
   margin-top: 450px;
   position: relative;
 }
-section > .con > .doz-row > .ale{
+.wit > .con > .doz-row > .ale{
   width: 25%;
 }
-section > .con > .doz-row > .ale > .img-box{
+.pellong > .con > .doz-row > .ale,
+.geomeong > .con > .doz-row > .ale{
+  width: 18%;
+  margin-left: 50px;
+}
+.wit > .con > .doz-row > .ale > .img-box{
   width: 100%;
   padding-bottom: 110% ;
+}
+.pellong > .con > .doz-row > .ale > .img-box,
+.geomeong > .con > .doz-row > .ale > .img-box{
+  width: 100%;
+  padding-bottom: 146% ;
 }
 section > .con > .doz-row > .text{
   font-size: 20px;
@@ -190,8 +200,8 @@ section > .con > .main-slider .content > .img-box{
   width: 100%;
   padding-bottom: 60%;
 }
-.main-slider .fa-chevron-left:before,
-.sub-slider .fa-chevron-left:before{
+.main-slider i.fa-chevron-left,
+.sub-slider i.fa-chevron-left{
   position: absolute;
   top: 50%;
   left: 30px;
@@ -200,8 +210,8 @@ section > .con > .main-slider .content > .img-box{
   font-size: 50px;
   color: #fff;
 }
-.main-slider .fa-chevron-right:before,
-.sub-slider .fa-chevron-right:before{
+.main-slider i.fa-chevron-right,
+.sub-slider i.fa-chevron-right{
   position: absolute;
   top: 50%;
   right: 30px;
@@ -214,7 +224,7 @@ section > .con > .sub-slider{
   position: relative;
 }
 section > .con > .sub-slider .content{
-  padding: 5px;
+  padding: 10px 5px;
 }
 section > .con > .sub-slider .content > .img-box{
   width: 100%;
