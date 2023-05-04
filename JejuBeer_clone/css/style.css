@@ -1,0 +1,237 @@
+/* 노멀라이징 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 라이브러리 */
+.cell {
+  float: left;
+}
+.cell-r {
+  float: right;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.con {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.img-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inline-grid{
+  font-size: 0;
+}
+.inline-grid > *{
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+/* 폰트 */
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html, body{
+  font-family: 'SpoqaHanSansNeo-Regular';
+}
+/* 스타일 */
+header > .top-header{
+  width: 100%;
+  height: 30px;
+}
+header > .top-header > nav{
+  margin-right: 50px;
+}
+header > .top-header > nav > ul > li{
+  padding: 0 10px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #888;
+  font-size: 12px;
+}
+header > .mid-header{
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+header > .mid-header > .main-logo{
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header > .mid-header > .main-logo  img{
+  max-width: 100%;
+  height: auto;
+}
+header > .mid-header > .btn-box{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 50px;
+}
+header > .mid-header > .btn-box > .btn > a {
+  background-color: #1ecad3;
+  color: #fff;
+  padding: 5px 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+header > .mid-header > .btn-box > .btn:hover{
+  background-color: #fff;
+}
+header > .btm-header{
+  width: 100%;
+  height: 30px;
+}
+header > .btm-header > nav > ul{
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+}
+header > .btm-header > nav > ul > li{
+  width: 20%;
+  color: #55585b;
+  font-size: 14px;
+  transition: 0.5s;
+}
+header > .btm-header > nav > ul > li:hover{
+  color: rgba(33, 33, 33, 0.5);
+}
+.main-video > video{
+  width: 100%;
+}
+.sec00 > .sec-main-img{
+  width: 100%;
+  margin-top: 70px;
+}
+.sec00 > .sec-main-img > .main-img{
+  margin: 0 auto;
+  width: 45%;
+}
+.sec00 > .sec-main-img > .main-img > .img-box{
+  width: 100%;
+  padding-bottom: 28.5%;
+}
+.sec-video{
+  width: 100%;
+  position: relative;
+}
+.sec-video > iframe{
+  position: absolute;
+  width: 63%;
+  height: 65%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* 에일 커스텀 시작 */
+section{
+  width: 100%;
+  padding-bottom: 55%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+section > .con > .title{
+  width: 25%;
+  margin: 0 auto;
+}
+section > .con > .title > .img-box{
+  width: 100%;
+  padding-bottom: 27%;
+}
+section > .con > .doz-row{
+  display: flex;
+  margin-top: 450px;
+  position: relative;
+}
+.wit > .con > .doz-row > .ale{
+  width: 25%;
+}
+.pellong > .con > .doz-row > .ale,
+.geomeong > .con > .doz-row > .ale{
+  width: 18%;
+  margin-left: 60px;
+}
+.wit > .con > .doz-row > .ale > .img-box{
+  width: 100%;
+  padding-bottom: 110% ;
+}
+.pellong > .con > .doz-row > .ale > .img-box,
+.geomeong > .con > .doz-row > .ale > .img-box{
+  width: 100%;
+  padding-bottom: 146% ;
+}
+section > .con > .doz-row > .text{
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+}
+section > .con > .main-slider{
+  margin-top: 30px;
+  position: relative;
+}
+section > .con > .main-slider .content > .img-box{
+  width: 100%;
+  padding-bottom: 60%;
+}
+.main-slider i.fa-chevron-left,
+.sub-slider i.fa-chevron-left{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: 999;
+  font-size: 50px;
+  color: #fff;
+}
+.main-slider i.fa-chevron-right,
+.sub-slider i.fa-chevron-right{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 999;
+  font-size: 50px;
+  color: #fff;
+}
+section > .con > .sub-slider{
+  position: relative;
+}
+section > .con > .sub-slider .content{
+  padding: 10px 5px;
+}
+section > .con > .sub-slider .content > .img-box{
+  width: 100%;
+  padding-bottom: 70%;
+}
+/* 에일 커스텀 끝 */
+
+
+
+/* https://soyeeee2.github.io/jeju-beer_copy/ */
