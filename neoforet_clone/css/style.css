@@ -1,0 +1,502 @@
+/* 노멀라이징 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 라이브러리 */
+.cell {
+  float: left;
+}
+.cell-r {
+  float: right;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.con-l {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.con-s {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.img-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 스타일 */
+.top-menu-wrap{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  color: white;
+}
+.top-menu-wrap > .top-menu {
+  position: relative;
+}
+.top-menu-wrap > .top-menu > .main-logo{
+  width: 152px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+.top-menu-wrap > .top-menu > .main-logo > .img-box{
+  width: 100%;
+  padding-bottom: 23%;
+}
+.top-menu-wrap > .top-menu > .main-logo > .hover-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.top-menu-wrap > .top-menu.active > .main-logo > .hover-box{
+  opacity: 1;
+  visibility: visible;
+}
+.top-menu-wrap > .top-menu{
+  text-align: center;
+}
+.top-menu-wrap > .top-menu > ul{
+  margin: 0 auto;
+  display: inline-block;
+}
+.top-menu-wrap > .top-menu > ul > li > a{
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 1vw;
+  padding: 50px 0px;
+}
+.top-menu-wrap > .top-menu > .more{
+  font-size: 1vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 30px;
+}
+.top-menu-wrap > .top-menu > .more > .sns-wrap{
+  margin-right: 10px;
+}
+.top-menu-wrap > .top-menu.active{
+  background-color: white;
+  color: #666;
+}
+.top-menu-wrap > .top-menu > ul > li > a{
+  display: inline-block;
+}
+.top-menu-wrap > .top-menu > ul > li > a > p::after{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #1dcb5d;
+  transition: 0.5s;
+} 
+.top-menu-wrap > .top-menu > ul > li.active > a > p::after{
+  width: 100%;
+}
+.top-menu-wrap > .sub-menu{
+  position: relative;
+  font-size: 1vw;
+}
+.top-menu-wrap > .sub-menu > .menu-wrap{
+  width: 100%; 
+  text-align: center;
+  background-color: #ddd;
+  color: #666;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.top-menu-wrap > .sub-menu > .menu-wrap.active{
+  opacity: 1;
+  visibility: visible;
+}
+.top-menu-wrap > .sub-menu > .menu-wrap > ul{
+  display: inline-block;
+  line-height: 50px;
+  vertical-align: top;
+  z-index: 1000;
+
+}
+.top-menu-wrap > .sub-menu > .menu-wrap > ul > li{
+  width: 200px;
+  border-left: 1px solid #678;
+  position: relative;
+  z-index: 9;
+}
+.top-menu-wrap > .sub-menu > .menu-wrap > ul > li:last-child{
+  border-right: 1px solid #678;
+}
+.top-menu-wrap > .sub-menu > .menu-wrap02::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+}
+.top-menu-wrap > .sub-menu > .menu-wrap02 > ul > li {
+  height: 250px;
+}
+/* 탑 메뉴 끝 */
+/* 메인 슬라이더 시작 */
+.main-slider-wrap{
+  width: 100%;
+  position: relative;
+}
+.main-slider-wrap > .main-slider .content > .img-box{
+  width: 100%;
+  padding-bottom: 56%;
+}
+.main-slider-wrap  .text-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+  color: white;
+}
+.main-slider-wrap  .text-wrap > h1{
+  text-transform: capitalize;
+  font-size: 3vw;
+}
+.main-slider-wrap  .text-wrap > h2{
+  font-size: 1vw;
+}
+.main-slider-wrap  .text-wrap > .more-box{
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 1vw;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 30px;
+  margin-top: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+.main-slider-wrap  .text-wrap > .more-box:hover{
+  background-color: #1dcb5d;
+  border-color: #1dcb5d;
+}
+.main-slider-wrap  .text-wrap > .more-box > .next{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: #1dcb5d;
+  transition: 0.5s;
+}
+.main-slider-wrap  .text-wrap > .more-box:hover > .next{
+  color: white;
+}
+.main-slider-wrap > .dots-wrap{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-slider-wrap > .dots-wrap > .dots{
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.main-slider-wrap > .dots-wrap > .dots.active{
+  background-color: white;
+}
+/* 메인 슬라이더 끝 */
+/* 프로덕트 시작 */
+.sec-product > .content-wrap{
+  position: relative;
+}
+.sec-product > .content-wrap > .pro-slider .product{
+  position: relative;
+}
+.sec-product > .content-wrap > .pro-slider .product > .img-box{
+  width: 100%;
+  padding-bottom: 135%;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1vw;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box > i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1dcb5d;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box:hover{
+  background-color: black;
+  color: white;
+}
+.sec-product > .content-wrap > .pro-slider .product > .text-box > p{
+  padding: 0px 5px;
+}
+.sec-product > .content-wrap > .text-box{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.sec-product > .content-wrap > .text-box > h1{
+  padding-bottom: 20px;
+}
+
+.sec-product > .content-wrap > .btn-wrap{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  display: flex;
+  text-align: center;
+  line-height: 50px;
+}
+.sec-product > .content-wrap > .btn-wrap > .btn{
+  width: 25%;
+  height: 100%;
+  font-size: 18px;
+}
+.sec-product > .content-wrap > .btn-wrap > .btn.active{
+  color: gray;
+}
+.sec-product > .content-wrap > .btn-wrap > .dots{
+  width: 50%;
+  height: 100%;
+}
+.sec-product > .content-wrap > .btn-wrap > .dots > .dot{
+  display: inline-block;
+  font-size: 10px;
+  margin: 0 3px;
+  color: rgba(0,0,0,0.3);
+}
+.sec-product > .content-wrap > .btn-wrap > .dots > .dot.active{
+  color: black;
+}
+/* 프로덕트 끝 */
+/* 소식 시작 */
+.sec-news{
+  padding-top: 70px;
+}
+.sec-news > .content-wrap > h1{
+  padding-bottom: 20px;
+}
+.sec-news > .content-wrap > h2{
+  padding-bottom: 20px;
+}
+.sec-news > .content-wrap > .news-box > .news{
+  width: calc((100% - 40px) / 3);
+  margin-right: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.sec-news > .content-wrap > .news-box > .news:last-child{
+  margin-right: 0;
+}
+.sec-news > .content-wrap > .news-box > .news > .img-box{
+  width: 100%;
+  padding-bottom: 85%;
+  background-position: top;
+  background-size: 100% ;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .news-box > .news:hover > .img-box{
+  background-size: 105%;
+}
+.sec-news > .content-wrap > .news-box > .news > .text-box{
+  width: 100%;
+  padding-bottom: 30%;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .news-box > .news:hover > .text-box{
+  top: 50%;
+}
+.sec-news > .content-wrap > .news-box > .news > .text-box > h3{
+  font-size: 1.1vw;
+  font-weight: bold;
+  padding: 20px;
+}
+.sec-news > .content-wrap > .news-box > .news > .text-box > p{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 1vw;
+  color: #666;
+}
+.sec-news > .content-wrap > .more-box{
+  width: 20%;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .more-box:hover{
+  background-color: black;
+  color: white;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs{
+  width: calc((100% - 20px) / 2);
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs:first-child{
+  margin-right: 20px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .img-box{
+  width: 100%;
+  padding-bottom: 20%;
+  border-radius: 15px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .text-box{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .text-box > h1{
+  font-size: 1.5vw;
+  padding-bottom: 10px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .text-box > h2{
+  font-size: 1vw;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box{
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-size: 1vw;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 30px;
+  transition: 0.5s;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover{
+  background-color: #1dcb5d;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box > i{
+  color: #1dcb5d;
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 5px;
+}
+.sec-news > .content-wrap > .cs-wrap > .cs > .more-box:hover > i{
+  color: white;
+}
+/* 소식 끝 */
+/* 푸터 시작 */
+.footer{
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.footer > .content-wrap{
+  position: relative;
+}
+.footer > .content-wrap > .footer-img{
+  width: 196px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+.footer > .content-wrap > .footer-img > .img-box{
+  width: 100%;
+  padding-bottom: 23%;
+}
+.footer > .content-wrap > .text-box{
+  font-size: 0.7vw;
+}
+.footer > .content-wrap > .text-box > ul > li{
+  display: inline-block;
+}
+.footer > .content-wrap > .text-box > ul > li::after{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: black;
+  margin: 0px 5px;
+  vertical-align: bottom;
+}
+.footer > .content-wrap > .text-box > ul > li:last-child:after{
+  width: 0;
+}
+.footer > .content-wrap > .murim-box{
+  background-color: #cacaca;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.footer > .content-wrap > .murim-box:hover{
+  background-color: gray;
+}
+.footer > .content-wrap > .murim-box > p{
+  font-size: 1vw;
+  display: inline-block;
+}
+.footer > .content-wrap > .murim-box > i{
+  font-size: 1vw;
+}
+/* 푸터 끝 */
+
+.up-btn{
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+/* https://github.com/soyeeee2/neoforet_copy.git */
